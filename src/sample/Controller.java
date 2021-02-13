@@ -12,6 +12,8 @@ import sample.repository.RepositoryImpl;
 import java.math.BigDecimal;
 import java.util.Map;
 
+//test
+
 public class Controller {
     private RepositoryImpl repository;
     private ObservableList<String> availableChoices;
