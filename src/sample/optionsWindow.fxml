@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="223.0" prefWidth="304.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OptionsController">
+   <children>
+      <Label fx:id="label" layoutX="25.0" layoutY="41.0" prefHeight="27.0" prefWidth="152.0" text="Path:" />
+      <TextField fx:id="path" layoutX="24.0" layoutY="68.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label layoutX="25.0" layoutY="108.0" text="Name:" />
+      <TextField fx:id="name" layoutX="24.0" layoutY="132.0" prefHeight="25.0" prefWidth="197.0" />
+      <Button layoutX="22.0" layoutY="173.0" mnemonicParsing="false" onAction="#setReport" text="Submit" />
+      <Button layoutX="169.0" layoutY="173.0" mnemonicParsing="false" onAction="#close" text="Cancel" />
+      <Label layoutX="22.0" layoutY="14.0" text="Set a location and name of report" />
+      <Button onAction="#selectDirectory" layoutX="232.0" layoutY="68.0" mnemonicParsing="false" text="Select" />
+   </children>
+</Pane>

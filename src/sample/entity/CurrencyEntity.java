@@ -3,6 +3,13 @@ package sample.entity;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/**
+ * The main entity contains some information provided by API
+ *
+ * <p>
+ * It contains base currency, date of last update, and current rates.
+ * </p>
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CurrencyEntity {
     private long timestamp;

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Options">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#openMenu" text="Report options" />
+              <MenuItem mnemonicParsing="false" onAction="#closeApp" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="33.0" layoutY="40.0" prefHeight="17.0" prefWidth="166.0" text="Amount" />
+      <Button layoutX="33.0" layoutY="169.0" mnemonicParsing="false" onAction="#calculate" text="Submit" />
+      <TextField fx:id="amount" layoutX="33.0" layoutY="65.0" prefHeight="25.0" prefWidth="121.0" />
+      <ChoiceBox fx:id="choiceBox" layoutX="164.0" layoutY="117.0" maxHeight="10.0" onAction="#choseTargetCurrency" prefHeight="10.0" />
+      <Label layoutX="168.0" layoutY="40.0" text="Base currency" />
+      <TextField fx:id="targetCurrency" layoutX="33.0" layoutY="117.0" prefHeight="25.0" prefWidth="121.0" />
+      <Label layoutX="34.0" layoutY="203.0" text="Result:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="result" layoutX="34.0" layoutY="223.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label fx:id="sourceCurrency" layoutX="168.0" layoutY="69.0" text="EUR" />
+      <Label layoutX="34.0" layoutY="147.0" text="Last Update:">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="lastUpdate" layoutX="98.0" layoutY="147.0" text="Label">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="96.0" text="Exchange rate" />
+      <Label layoutX="165.0" layoutY="97.0" text="Target currency" />
+      <Button layoutX="33.0" layoutY="263.0" mnemonicParsing="false" onAction="#generateReport" text="Generate report" />
+      <Button onAction="#openFolder" layoutX="153.0" layoutY="263.0" mnemonicParsing="false" text="Open Report" />
+   </children>
+</Pane>

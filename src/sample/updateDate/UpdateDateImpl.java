@@ -3,7 +3,21 @@ package sample.updateDate;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 
+/**
+ * This class implements UpdateDate interface
+ *
+ */
 public class UpdateDateImpl implements UpdateDate {
+    /**
+     * The method accepts time and returns formatted date
+     *
+     * <p>
+     * It returns SimpleDateFormat if time is correct, otherwise NumberFormatException is thrown
+     * </p>
+     *
+     * @param time  the time parameter
+     * Returns formatted date
+     */
     @Override
     public String lastUpdate(long time) {
         if (time > 0) {
